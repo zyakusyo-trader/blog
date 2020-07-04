@@ -1,0 +1,40 @@
+<!-- スライダー設定（headに挿入） -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!-- ←は既にjqueryを読み込んでいる場合は読み込まなくても大丈夫です -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.js" defer></script>
+<script>
+  $(document).ready(function () {
+    // initiates responsive slide gallery     
+    var settings = function() {
+      var settings1 = {
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
+        mode: 'horizontal',
+        startSlide: 0,
+        captions: true
+      };
+      var settings2 = {
+        minSlides: 2, //スライダーの最小数を設定
+        maxSlides: 3, //スライダーの最大数を設定
+        moveSlides: 1,
+        mode: 'horizontal', //スライダーのスタイル設定。（他にもvartivcal, fade等があります）
+        slideWidth: 272, //スライダーの大きさを設定。お好みで調整してください。
+        startSlide: 0,
+        slideMargin: 10,
+        captions: true, //キャプションの有無
+        adaptiveHeight: false
+      };
+      return ($(window).width()<630) ? settings1 : settings2;
+    }
+
+    var mySlider;
+
+    function slideSetting() {
+      mySlider.reloadSlider(settings());
+    }
+
+    mySlider = $('.slider').bxSlider(settings());
+    $(window).resize(slideSetting);
+  });
+</script>
