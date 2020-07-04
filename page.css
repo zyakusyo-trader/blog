@@ -486,18 +486,3 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 
 } 
 
-/* スライダー設定 */
-.bx-wrapper{margin:0 auto;}
-
-.bx-wrapper .bx-caption span{
-    font-size:60%!important;
-    padding:5px!important;
-    line-height: 1.3em;
-}
-
-.slider div {
-  display: none;
-}
-.bx-viewport .slider div {
-  display: block !important;
-}
