@@ -7,12 +7,18 @@ Author URI: http://blog.hatena.ne.jp/c-miya/
 */
 html{box-sizing:border-box;font-size:90%;}
 *,:after,:before{box-sizing:inherit}
-body {font-size:100%;font-family: 'Montserrat';
-margin:0 0 0 0;padding:0 0 0 0;color:#33403d;
-background-color: #fafafa;
-background-image: radial-gradient(#e8e8e8 10%, transparent 20%), radial-gradient(#e8e8e8 10%, transparent 20%);
-background-size: 14px 14px;
-background-position: 0 0, 7px 7px;
+/* 背景 */
+body {
+    font-size: 100%;
+    font-family: "Helvetica", "Arial", YuGothic,"Yu Gothic","Hiragino Sans","ヒラギノ角ゴシック","メイリオ", Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    color: #33403d;
+    background-color: #f7efe2;
+    background-image: none;
+    background-size: 14px 14px;
+    background-position: 0 0, 7px 7px;
+    line-height: 1.75;
 }
 
 ::selection {background:#b2dfdb;color:#252525;}
