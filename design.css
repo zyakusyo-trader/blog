@@ -126,6 +126,7 @@ li:last-child{
 .page-entry .entry-date,.page-preview .entry-date{padding:42px 0 0 0;}
 
 .entry-categories{padding:0 .8em;font-size:10px;}
+
 /* トップページ、記事一覧、カテゴリタグ */
 .page-index .entry-categories {
     position: absolute;
@@ -303,6 +304,7 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 
 .urllist-item{position:relative;padding:0 2em 0 0;}
 .urllist-item:hover::before{right:0.4em;transition:0.3s;}
+
 /* サイドバー、最新記事末尾アイコン */
 .urllist-item::before {
     content: '\f006';
@@ -360,6 +362,33 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 .footer-h{font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:0.15rem;border-bottom:2px dotted #fff;}
 .three-footer div a{color:#fff;border-bottom:1px dotted #fff;}
 .three-footer div a:hover{border-bottom:1px solid #fff;}
+
+.recommends{
+    width:1174px;display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin:2rem auto 0 auto;
+}
+.recommends a.recommend-entry{
+    display: block;
+    width: 19%;
+    font-size: 0.8rem;background:#fff;box-shadow:0px 0px 3px rgba(0,0,0,0.1);position:relative;
+}
+.recommends a.recommend-entry:hover,.recommends a.recommend-entry2:hover{
+    box-shadow:1px 1px 5px rgba(0,0,0,0.3);transition: .5s;
+}
+.recommend-title{display:block;padding:0.8em 1em;word-break:break-all;}
+.recommend-img{
+    width:100%;
+}
+
+.recommends a.recommend-entry2{
+    display: block;
+    width: 19%;
+    font-size: 0.8rem;box-shadow:0px 0px 3px rgba(0,0,0,0.1);position:relative;
+    height:180px;background-size:cover;background-position:50% 50%;
+}
+.recommend-entry2 .recommend-title{background:rgba(255,255,255,0.8);position:absolute;bottom:0;width:100%;text-shadow:0 0 3px rgba(255,255,255,0.8);}
 
 #zeno-menu{background:#fa4032;box-shadow:0px 3px 2px rgba(0,0,0,0.2);}
 .zeno-menu{list-style-type:none;width:1174px;margin:0 auto;padding:0 0 0 0;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;}
@@ -528,6 +557,7 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 .zeno-menu{width:100%;}
 
 }
+/* ******** ZENO-TEALはここまで******** */
 
 /* ******** フォントサイズ ******** */
 .entry-content p {font-size: 17px;}
@@ -683,6 +713,7 @@ animation-duration: 2s;/* アニメーション時間 */
 .article-area{
     background-color:f7efe2;/*背景色*/
 }
+
 .article-container{
     width: 90%;/*画像表示の幅*/
     display: -webkit-flex;
