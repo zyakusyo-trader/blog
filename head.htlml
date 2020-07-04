@@ -16,10 +16,10 @@
       };
       var settings2 = {
         minSlides: 2, //スライダーの最小数を設定
-        maxSlides: 3, //スライダーの最大数を設定
+        maxSlides: 4, //スライダーの最大数を設定
         moveSlides: 1,
         mode: 'horizontal', //スライダーのスタイル設定。（他にもvartivcal, fade等があります）
-        slideWidth: 272, //スライダーの大きさを設定。お好みで調整してください。
+        slideWidth: 400, //スライダーの大きさを設定。お好みで調整してください。
         startSlide: 0,
         slideMargin: 10,
         captions: true, //キャプションの有無
