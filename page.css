@@ -107,7 +107,7 @@ li:last-child{
 .page-index .entry-title{position:absolute;top:0;font-size:18px;letter-spacing:1px;line-height:26px;word-break:break-all;height:52px;overflow:hidden;}
 .page-index .entry-title .entry-title-link{display:block;max-height:52px;position:relative;top:50%;-webkit-transform:translateY(-50%);transform: translateY(-50%);}
 
-.entry-date{color:#666;font-weight:700;margin:0 0 0.5em 0;}
+.entry-date{color:#666;font-weight:700;margin:0 0 0.5em 0;} 
 .entry-date a{display:inline-block;color:#666;}
 .entry-date:before{content:"\f043";font-family:blogicon;}
 .page-index .entry-date{font-size:12px;margin:64px 0 0 0;}
