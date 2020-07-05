@@ -896,3 +896,17 @@ background: transparent;
           color: #fff; }
       .toTop-nav li a:hover {
         text-decoration: none; }
+        
+.date {
+display: none;
+}
+
+.entry-categories{
+display: none;
+}
+.entry-categories.categories{
+display: none;
+}
+.entry-title{
+padding: 1.5em .5em .5em .5em;
+}
