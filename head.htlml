@@ -38,4 +38,4 @@
     mySlider = $('.slider').bxSlider(settings());
     $(window).resize(slideSetting);
   });
-</script>
+</script> 
