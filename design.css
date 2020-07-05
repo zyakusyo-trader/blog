@@ -824,6 +824,14 @@ animation-duration: 2s;/* アニメーション時間 */
 /* フォントサイズ等は適宜調整していただいて構いません。 */
 
 /* スライダー設定 */
+body .bx-wrapper {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+border: none;
+background: transparent;
+}
+
 .bx-wrapper{margin:0 auto;}
 
 .bx-wrapper .bx-caption span{
@@ -838,3 +846,17 @@ animation-duration: 2s;/* アニメーション時間 */
 .bx-viewport .slider div {
   display: block !important;
 }
+
+
+.slider div img{
+  margin: 10px 5px 10px 10px;
+  padding: 0;
+}
+
+
+.bx-caption{
+  margin: 10px 5px 10px 10px;
+  padding: 0;
+}
+
+
