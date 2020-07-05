@@ -117,106 +117,34 @@ const t=window,e=document,n="stoc",o="stoc-module",i="stoc-title",r="stoc-body",
  </div>
 </div>
 
-<script type="text/javascript">
-function pagerDate(pager){
-    if(pager == null || pager.childNodes[1] === undefined){
-        return false;
-    }
-    
-    // 記事のURLから年月日(yyyy/mm/dd)にマッチさせる
-    var dateReg = /\d{4}\/\d{2}\/\d{2}/; 
-    var date = dateReg.exec(pager.childNodes[1].href);
-
-    // yyyy/mm/dd を yyyy-mm-ddに変換して表示する
-    if(date != null){
-        pager.innerHTML = date[0].replace(/\//g,"-") + "<br />" + pager.innerHTML;
-    }
-}
-
-// PC
-var prev = document.querySelector(".pager-prev");
-var next = document.querySelector(".pager-next");
-pagerDate(prev);
-pagerDate(next);
-
-// スマートフォン(はてなブログProのみ)
-var left = document.querySelector(".pager-l");
-var right = document.querySelector(".pager-r");
-pagerDate(left);
-pagerDate(right);
-
-<script>
-
 // とっぷにもどる
-<!-- ボタンおよびFontawesomeのアイコン埋め込み-->
-<div id="page-top" title="トップへ">
-  <a id="move-page-top"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
-</div>
-<!-- jQueryによるボタン動作-->
+<ul class="toTop-nav">
+<li><a href="javascript:void(0);" onclick="smoothScroll(0);return false;">　</a></li>
+</ul>
 <script>
-  $(window).scroll(function(){
-    var now = $(window).scrollTop();
-    if(now > 500){
-      $("#page-top").fadeIn("slow");
-    }else{
-      $("#page-top").fadeOut("slow");
-    }
-  });
-  $("#move-page-top").click(function(){
-    $("html,body").animate({scrollTop:0},"slow");
-  });
+    function smoothScroll(targetY) {
+    var startY = window.pageYOffset;
+    var f = ( targetY > startY ) ? true : false; // 'down' = true : 'up' = false
+    setTimeout(function(){
+        if( f && (startY <= targetY)){
+            startY = startY + (targetY - startY) / 20 + 1;
+            window.scrollTo(0, startY);
+            setTimeout(arguments.callee, 10);
+        } else if ( !f && startY >= targetY){
+            startY = startY - (startY - targetY) / 20 - 1;
+            window.scrollTo(0, startY);
+            setTimeout(arguments.callee, 10);
+        }else{
+            window.scrollTo(0, targetY);
+        }
+    }, 10);
+}
 </script>
 
-<head> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css"> 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-</script></head>
-<html> 
-<body>
-<pre> 
-</pre> 
-<p id="pageTop"><a href="#"><i class="fas fa-angle-double-up ">
-</i></a>
-</p> 
-<style> 
-/*-- CSSの記述 --*/  
-#pageTop {    
-position: fixed;
-bottom: 30px;    
-right: 15px;  }  
-#pageTop i {  
-padding-top: 6px   }  
-#pageTop a {    
-display: block;    
-z-index: 999;    
-padding: 8px;    
-border-radius: 30px;    
-width: 35px;    
-height: 35px;    
-background-color: rgba(0,0,255,0.2);    
-color: #fff;    
-font-weight: bold;    
-text-decoration: none;    
-text-align: center;  }  
-#pageTop a:hover {    
-text-decoration: none;    
-opacity: 0.7;    
-color:rgba(0,0,0,0.2);  
-}
-/*-- トップボタン --*/  
-$(function(){ 
-var topBtn=$('#pageTop');
-topBtn.hide();
-/*-- ボタン設置--*/  
-$(window).scroll(function(){ 
-if($(this).scrollTop()>100){ 
-/*-- ボタン表示設定 --*/  
-topBtn.fadeIn('slow'); }else{ 
-/*-- ボタン非表示設定 --*/  
-topBtn.fadeOut('slow'); } 
-});
-/*-- クリック後、トップに戻る--*/   
-topBtn.click(function(){ 
-$('body,html').animate({ 
-scrollTop:0},'slow');
-});
+
+<ul class="toTop-nav">
+<li><a href="javascript:void(0);" onclick="smoothScroll(0);return false;"><i class="blogicon-chevron-up" aria-hidden="true" style="font-size:50px;"></i></a></li>
+
+<script>
+function smoothScroll(o){var e=window.pageYOffset,l=o>e;setTimeout(function(){l&&o>=e?(e=e+(o-e)/20+1,window.scrollTo(0,e),setTimeout(arguments.callee,10)):!l&&e>=o?(e=e-(e-o)/20-1,window.scrollTo(0,e),setTimeout(arguments.callee,10)):window.scrollTo(0,o)},10)}
+</script>
