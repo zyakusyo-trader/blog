@@ -817,14 +817,14 @@ background: transparent;
   padding: 0;
 }
 
-.entry-title{
+h1.entry-title{
   position: relative;
   background: #f1f8ff;
   padding: 0.25em 0.5em;
   border-left: solid 2em #5c9ee7;
 }
 
-.entry-title:before {
+h1.entry-title:before {
   font-family: "Font Awesome 5 Free";
   content: "\f303";
   position: absolute;
