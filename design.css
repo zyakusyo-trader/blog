@@ -116,7 +116,25 @@ li:last-child{
 
 .entry-header{position:relative;}
 .page-index .entry-header{position:absolute;top:200px;padding:0 0 0 0;width:100%;}
-.page-index .entry-title{position:absolute;top:0;font-size:18px;letter-spacing:1px;line-height:26px;word-break:break-all;height:52px;overflow:hidden;}
+.page-index .entry-title {
+  position: relative;
+  background: #f1f8ff;
+  padding: 0.25em 0.5em;
+  border-left: solid 2em #5c9ee7;
+}
+
+.page-index .entry-title:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f303";
+  position: absolute;
+  padding: 0em;
+  color: white;
+  font-weight: 900;
+  left: -1.35em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .page-index .entry-title .entry-title-link{display:block;max-height:52px;position:relative;top:50%;-webkit-transform:translateY(-50%);transform: translateY(-50%);}
 
 .entry-date{color:#666;font-weight:700;margin:0 0 0.5em 0;}
