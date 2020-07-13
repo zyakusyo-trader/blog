@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     
 <script>
 <!--ブログタイトルを2行に分けて色を別々に設定-->
-       $('#title').html('<a href="https://zyakusyo-trader.com"><font size="6" color="#00897b" >ENの</font><font size="15" color="#00897b" font face="Mv Boli">FX</font><br><font size="5" color="#00897b">～～</font></a>');
+       $('#title').html('<a href="https://zyakusyo-trader.com"><font size="6" color="#00897b" >USD/JPY Scalping</font><font size="15" color="#00897b" font face="Mv Boli">by Zyakusyo-Trader</font><br><font size="5" color="#00897b">～～</font></a>');
        
 <!--補足説明を2行に分けて色を別々に設定-->
        $('#blog-description').html('');
@@ -26,10 +26,10 @@
                         var $target = $this.next();
                         if ($target.css('display') == 'none') {
                             $target.slideDown(400);
-                            $this.text("閉じる");
+                            $this.text("Close.");
                         } else {
                             $target.slideUp(400);
-                            $this.text("もう一度見る！")
+                            $this.text("Watch again！")
                         };
                     });
                 });
@@ -45,18 +45,18 @@
 const PAGES = [
   {
     class    : 'page-entry',
-    title    : '目次',
+    title    : 'Index',
     display  : true
   },
   {
     class    : 'page-index',
-    title    : 'このページの記事一覧',
+    title    : 'Contents in this page',
     listPage : true,
     display  : true
   },
   {
     class    : 'page-archive',
-    title    : 'このページの記事一覧',
+    title    : 'Contents in this page',
     listPage : true,
     display  : true
   },
@@ -105,12 +105,12 @@ const t=window,e=document,n="stoc",o="stoc-module",i="stoc-title",r="stoc-body",
 
 <div class="three-footer">
  <div class="footer-1">
-    <div class="footer-h"><i class="blogicon-help-alt lg"></i> <a href="https://zyakusyo-trader.com/about" class="recommend-entry" class="recommend-entry"><font size="4" color="#fff" ><b>このページについて</b><br></font></span></a>
+    <div class="footer-h"><i class="blogicon-help-alt lg"></i> <a href="https://zyakusyo-trader.com/about" class="recommend-entry" class="recommend-entry"><font size="4" color="#fff" ><b>About this website</b><br></font></span></a>
     </div>
  </div>
 
  <div class="footer-2">
-    <div class="footer-h"><i class="blogicon-account lg"></i> <a href='https://zyakusyo-trader.com/プライバシポリシー'><font size="4" color="#fff" ><b>プライバシポリシー Privacy Policies</b></font></a>
+    <div class="footer-h"><i class="blogicon-account lg"></i> <a href='https://en.zyakusyo-trader.com/privacy_policy'><font size="4" color="#fff" ><b>Privacy Policies</b></font></a>
     </div>
  </div>
 
