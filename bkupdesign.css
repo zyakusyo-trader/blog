@@ -22,7 +22,7 @@ body {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     color: #33403d;
-    background-color: #f7efe2;
+    background-color: #98dbc6;
     background-image: none;
     background-size: 14px 14px;
     background-position: 0 0, 7px 7px;
@@ -70,7 +70,7 @@ li:last-child{
 #globalheader-container{background:#faaf08;color:#c76711;}
 
 /* タイトル */
-#blog-title{width:100%;height:200px;overflow:hidden;display:table;margin:0 0 0rem 0;background:#fa812f;color:#fff;}
+#blog-title{width:100%;height:200px;overflow:hidden;display:table;margin:0 0 0rem 0;background:#e6d72a;color:#fff;}
 #blog-title #blog-title-inner{display:table-cell;text-align:center;vertical-align:middle;}
 #blog-title #title a{font-size:48px;font-weight:700;line-height:1;color:#fff;letter-spacing:0.15em;}
 
@@ -94,7 +94,7 @@ li:last-child{
 
 .entry{width:100%;}
 .entry-content p{margin:0 0 1.5em 0;padding:0 0 0 0;}
-.entry-content p a {color:#fa812f;text-decoration:underline;}
+.entry-content p a {color:#e6d72a;text-decoration:underline;}
 .entry-content p a:hover {background:#e0f2f1;}
 .entry-content p a:visited {color:#faaf08;}
 
@@ -139,10 +139,10 @@ li:last-child{
     overflow: hidden;
     border-radius: 12px;
 }
-.page-index .entry-categories a{display:inline-block;color:#fa812f;font-weight:bold;line-height:2;margin:0 0.2em;}
+.page-index .entry-categories a{display:inline-block;color:#e6d72a;font-weight:bold;line-height:2;margin:0 0.2em;}
 
 .page-entry .entry-categories, .page-preview .entry-categories{position:absolute;top:0.9em;left:-48px;z-index:2;display:inline-block;background:#00897b;padding:.4em .8em .2em;font-size:11px;transform:rotate(-5deg);box-shadow:1px 1px 2px rgba(0,0,0,0.2);}
-.page-entry .entry-categories a, .page-preview .entry-categories a{display:inline-block;color:#fa812f;font-weight:700;}
+.page-entry .entry-categories a, .page-preview .entry-categories a{display:inline-block;color:#e6d72a;font-weight:700;}
 .page-entry .entry-categories:before, .page-preview .entry-categories:before{content:"\f013";font-family:blogicon;}
 
 a.entry-see-more{position:absolute;top:0;width:100%;height:100%;color:transparent;}
@@ -174,11 +174,11 @@ a.entry-see-more{position:absolute;top:0;width:100%;height:100%;color:transparen
 .page-entry .entry-footer-html{padding:0 0 0 0;}
 
 /* 記事内 */
-.entry-content h2{background:#fa812f;color:#fff;font-weight:700;letter-spacing:2px;padding:1.1em 1em;margin:3em 0 1em 0;font-size:1.4rem;line-height:1;position:-webkit-sticky;position:sticky;top:0;z-index:99;}
-.entry-content h2::before{position:absolute;top:100%;content:'';border-style: solid;border-width: 12px 12px 0 12px;border-color: #fa812f transparent transparent transparent;}
-.entry-content h3{font-size:1.3rem;padding:1rem;border-left:6px solid #fa812f;margin:2em 0 1em 0;color:#fa812f;}
+.entry-content h2{background:#e6d72a;color:#fff;font-weight:700;letter-spacing:2px;padding:1.1em 1em;margin:3em 0 1em 0;font-size:1.4rem;line-height:1;position:-webkit-sticky;position:sticky;top:0;z-index:99;}
+.entry-content h2::before{position:absolute;top:100%;content:'';border-style: solid;border-width: 12px 12px 0 12px;border-color: #e6d72a transparent transparent transparent;}
+.entry-content h3{font-size:1.3rem;padding:1rem;border-left:6px solid #e6d72a;margin:2em 0 1em 0;color:#e6d72a;}
 .entry-content h4{font-size:1.3rem;padding:1em 0 0 0;margin:0 0 .5em 0;}
-.entry-content h4::before{content:'\f029';font-family:blogicon;margin-right:.5em;color:#fa812f;}
+.entry-content h4::before{content:'\f029';font-family:blogicon;margin-right:.5em;color:#e6d72a;}
 .entry-content h5{font-size:1.2rem;padding:1em 0 0 0;margin:0 0 .3em 0;}
 .entry-content h6{font-size:1.1rem;padding:1em 0 0 0;margin:0 0 .3em 0;}
 
@@ -205,13 +205,13 @@ margin:0 0 0.7em 0;max-width:100%;}
 .entry-content ul li,.entry-content ol li{margin:0 0 0.2em 0;padding:0 0 0 0;line-height:1.7;list-style-type:none;position:relative;}
 
 .entry-content ul li::before,
-.entry-content ul ul li::before{color:#fa812f;font-size:.8em;margin-right:0.1rem;position:relative;top:-0.2em;}
+.entry-content ul ul li::before{color:#e6d72a;font-size:.8em;margin-right:0.1rem;position:relative;top:-0.2em;}
 .entry-content ul li::before{content:'\25CF';}
 .entry-content ul ul li::before{content:'\25A0';}
 
 .entry-content ol li:before {
   content:counter(my-counter);counter-increment:my-counter;
-  background-color:#fa812f;color:#fff;font-size:0.8rem;display:inline-block;text-align:center;height:1.5em;width:1.5em;line-height:1.5em;position:relative;top:-0.1em;margin:0 0.4em 0 0;
+  background-color:#e6d72a;color:#fff;font-size:0.8rem;display:inline-block;text-align:center;height:1.5em;width:1.5em;line-height:1.5em;position:relative;top:-0.1em;margin:0 0.4em 0 0;
 }
 .entry-content ol ol li:before {
   content:counter(my-counter);counter-increment:my-counter;
@@ -225,11 +225,11 @@ table{margin:0em 0 1em 0;border-collapse:collapse;border:3px solid #ccc;max-widt
 th{border:1px solid #ccc;padding:0.3em 0.6em;background:#eee;color:#666;}
 td{border:1px solid #ccc;padding:0.3em 0.6em;}
 
-ul.table-of-contents{border:1px solid #fa812f;padding:1.2em 1em 1em 2em;margin:0.5em 0 2em 0;position:relative;}
+ul.table-of-contents{border:1px solid #e6d72a;padding:1.2em 1em 1em 2em;margin:0.5em 0 2em 0;position:relative;}
 ul.table-of-contents li{font-size:90%;margin-bottom:0;}
 ul.table-of-contents li a{text-decoration:none;}
 ul.table-of-contents ul ul{display:none;}
-ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolute;top:-0.6em;left:0.5em;background:#fff;padding:0 0.5em;font-weight:700;color:#fa812f;}
+ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolute;top:-0.6em;left:0.5em;background:#fff;padding:0 0.5em;font-weight:700;color:#e6d72a;}
 
 
 .entry-content strong{background:linear-gradient(transparent 60%, #e6ee9c 0%);}
@@ -271,14 +271,14 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 
 /* ページャー */
 .page-index .pager{width:100%;padding:1em 0;text-align:center;}
-.page-index .pager a{display:inline-block;padding:0.5em 1em;border:1px solid #fa812f;color:#fa812f;}
-.page-index .pager a:hover{background:#fa812f;color:#fff;}
+.page-index .pager a{display:inline-block;padding:0.5em 1em;border:1px solid #e6d72a;color:#e6d72a;}
+.page-index .pager a:hover{background:#e6d72a;color:#fff;}
 
 .page-entry .pager{width:calc(100% - 35px);padding:1em 0;margin:1rem 0 2rem 35px;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;}
-.page-entry .pager span{display:table;width:49%;border:1px solid #fa812f;}
-.page-entry .pager span a{display:table-cell;padding:0 0.5rem;line-height:1.2rem;vertical-align:middle;color:#fa812f;}
-.page-entry .pager span a:hover{background:#fa4032;color:#fff;}
-.page-entry .pager .pager-prev::before, .page-entry .pager .pager-next::after{display:table-cell;vertical-align:middle;font-family:blogicon;background:#fa812f;color:#fff;width:4rem;height:4rem;text-align:center;}
+.page-entry .pager span{display:table;width:49%;border:1px solid #e6d72a;}
+.page-entry .pager span a{display:table-cell;padding:0 0.5rem;line-height:1.2rem;vertical-align:middle;color:#e6d72a;}
+.page-entry .pager span a:hover{background:#f18d9e;color:#fff;}
+.page-entry .pager .pager-prev::before, .page-entry .pager .pager-next::after{display:table-cell;vertical-align:middle;font-family:blogicon;background:#e6d72a;color:#fff;width:4rem;height:4rem;text-align:center;}
 .page-entry .pager .pager-prev::before{content:'\f005';}
 .page-entry .pager .pager-next::after{content:'\f006';}
 
@@ -287,7 +287,7 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 
 /* サイドバー */
 .hatena-module{width:100%;overflow:hidden;margin:0 0 3em 0;font-size:12px;}
-.hatena-module-title{background:#fa812f;color:#fff;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:1em;margin:0 0 1em 0;font-size:1.3rem;line-height:1;}
+.hatena-module-title{background:#e6d72a;color:#fff;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:1em;margin:0 0 1em 0;font-size:1.3rem;line-height:1;}
 .hatena-module-title a{color:#fff;}
 
 
@@ -326,14 +326,14 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 .hatena-module-category .hatena-urllist{margin:-1em 0 0 0;}
 .hatena-module-category .hatena-urllist li{border-bottom:1px dotted #e0e0e0;position:relative;}
 .hatena-module-category .hatena-urllist li:last-of-type{border-bottom:0px;}
-.hatena-module-category .hatena-urllist li::before{content:'\f006';font-family:blogicon;font-size:1.2rem;line-height:1;color:#fa812f;position:absolute;right:0.6em;top:calc(50% - 0.6rem);z-index:2;}
+.hatena-module-category .hatena-urllist li::before{content:'\f006';font-family:blogicon;font-size:1.2rem;line-height:1;color:#e6d72a;position:absolute;right:0.6em;top:calc(50% - 0.6rem);z-index:2;}
 .hatena-module-category .hatena-urllist li:hover::before{right:0.4em;transition:0.3s;}
 .hatena-module-category .hatena-urllist li a{display:block;padding:1em 0;}
 
 
 /* アーカイブ */
-.archive-heading{background:#fa812f;color:#fff;font-weight:700;letter-spacing:2px;padding:1.1em 1em;margin:0 0 1em 0;font-size:1.4rem;line-height:1;position:relative;}
-.archive-heading::before{position:absolute;top:100%;content:'';border-style: solid;border-width: 12px 12px 0 12px;border-color: #fa812f transparent transparent transparent;}
+.archive-heading{background:#e6d72a;color:#fff;font-weight:700;letter-spacing:2px;padding:1.1em 1em;margin:0 0 1em 0;font-size:1.4rem;line-height:1;position:relative;}
+.archive-heading::before{position:absolute;top:100%;content:'';border-style: solid;border-width: 12px 12px 0 12px;border-color: #e6d72a transparent transparent transparent;}
 
 .page-archive .archive-entries{padding:0 0 0 0;}
 .page-archive .archive-entry{position:relative;min-height:calc(120px + 1em);padding:0 0 1em 136px;margin:0 0 1em 0;border-bottom:1px solid #ccc;overflow:hidden;}
@@ -390,7 +390,7 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 }
 .recommend-entry2 .recommend-title{background:rgba(255,255,255,0.8);position:absolute;bottom:0;width:100%;text-shadow:0 0 3px rgba(255,255,255,0.8);}
 
-#zeno-menu{background:#fa4032;box-shadow:0px 3px 2px rgba(0,0,0,0.2);}
+#zeno-menu{background:#f18d9e;box-shadow:0px 3px 2px rgba(0,0,0,0.2);}
 .zeno-menu{list-style-type:none;width:1174px;margin:0 auto;padding:0 0 0 0;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;}
 .zeno-menu li{display:block;width:100%;}
 .zeno-menu li a{color:#fff;display:block;width:100%;padding:1em 0;text-align:center;}
@@ -486,7 +486,7 @@ ul.table-of-contents:before{content:"INDEX";display:inline-block;position:absolu
 #blog-title #title a{font-size:8vw;letter-spacing:0.3em;}
 #blog-title #blog-description{font-size:3vw;padding-top:0.5em;}
 
-.entry-content h2{background:#fff;color:#fa812f;border-bottom:3px solid #fa812f;letter-spacing:0px;padding:1em 4% 0 4%;margin:3em -4% 1em -4%;font-size:1.3rem;line-height:1.2;position:relative;position:-webkit-sticky;position:sticky;top:0;}
+.entry-content h2{background:#fff;color:#e6d72a;border-bottom:3px solid #e6d72a;letter-spacing:0px;padding:1em 4% 0 4%;margin:3em -4% 1em -4%;font-size:1.3rem;line-height:1.2;position:relative;position:-webkit-sticky;position:sticky;top:0;}
 .entry-content h2::before{display:none;}
 
 
@@ -669,7 +669,7 @@ animation-duration: 2s;/* アニメーション時間 */
 
 /*=== article window ===*/
 .article-area{
-    background-color:f7efe2;/*背景色*/
+    background-color:98dbc6;/*背景色*/
 }
 
 .article-container{
@@ -685,7 +685,7 @@ animation-duration: 2s;/* アニメーション時間 */
     text-align:center;}
 .article-box{
     box-sizing:border-box;
-    border:5px solid #fa812f;/*画像の枠色*/
+    border:5px solid #e6d72a;/*画像の枠色*/
     width:25%;
     padding:0px;
     margin:30px 15px;/*画像周りの空白*/
